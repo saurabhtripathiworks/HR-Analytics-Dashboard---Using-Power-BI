@@ -1,0 +1,34 @@
+Process
+Imported data from Excel and transformed it from a wide table view to a tall table view, putting all dates into one column.
+Created a measure table to include various measures for detailed analysis.
+
+Measures Defined
+Presence %:
+Presence % = DIVIDE([Present Days], [Total Working Days], 0)
+
+Present Days:
+Present Days =
+VAR presentdays = CALCULATE(COUNT('Final Data'[Value]), 'Final Data'[Value] = "P")
+RETURN presentdays + [WFH Count]
+
+SL % (Sick Leave %):
+SL % = DIVIDE([SL Count], [Total Working Days], 0)
+
+SL Count (Sick Leave Count):
+SL Count = SUM('Final Data'[SL Count])
+
+Total Working Days:
+Total Working Days =
+VAR totaldays = COUNT('Final Data'[Value])
+VAR nonworkdays = CALCULATE(COUNT('Final Data'[Value]), 'Final Data'[Value] IN {"WO", "HO"})
+RETURN totaldays - nonworkdays
+
+WFH % (Work From Home %):
+WFH % = DIVIDE([WFH Count], [Present Days], 0)
+
+WFH Count (Work From Home Count):
+WFH Count = SUM('Final Data'[WFH Count])
+
+Additional Tables Created
+Created a month table like "Apr 22".
+Added tables for WFH count, SL count, and day of the week ("MON").
