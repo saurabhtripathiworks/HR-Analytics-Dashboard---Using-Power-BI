@@ -1,13 +1,18 @@
-# HR Analytics Dashboard 
+# HR Analytics Dashboard
 
 ## Overview
 This Power BI project features interactive dashboards that analyze HR data for Atliq Hardware Company. It tracks presence, work-from-home, and sick leave percentages, providing valuable insights into attendance trends and patterns. The dashboard is designed to help optimize workforce management effectively.
 
 ## Dashboard Preview
-Preview the HR Analytics Dashboard by checking the PDF file linked below.
+Preview the HR Analytics Dashboard by checking the PDF file linked below, or click on the **[Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDhlMGQxZjItZTEzZC00OTRiLWIxZTctZGE4YmY2MTUzMDQ0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)** to view the live dashboard.
 
 ## PDF File
 - [HR Analytics Dashboard](https://github.com/saurabhtripathiworks/HR-Analytics-Dashboard---Using-Power-BI/blob/main/HR%20Analytics%20Dashboard.pdf)
+
+## Live Dashboard
+You can view the live Power BI dashboard here:
+
+- [Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDhlMGQxZjItZTEzZC00OTRiLWIxZTctZGE4YmY2MTUzMDQ0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
 ## About this Dataset
 The dataset, named Attendance Sheet 2022-2023, includes several tabs:
